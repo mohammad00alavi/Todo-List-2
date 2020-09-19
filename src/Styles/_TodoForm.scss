@@ -1,0 +1,33 @@
+// Developed and Designed by Mohammad Alavi - https://github.com/mohammad00alavi 
+
+.TodoForm {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 1fr;
+  input {
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: $transition-1;
+    border: 2px solid $btn-color;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  button {
+    color: $btn-color;
+    padding: 15PX;
+    border-radius: 30px;
+    transition: $transition-1;
+    border: 2px solid $btn-color;
+    border-left: none;
+    background-color: rgb(214, 248, 255);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 600;
+    &:hover {
+      border-color: $primary-color;
+      letter-spacing: 1px;
+    }
+  }
+}
+

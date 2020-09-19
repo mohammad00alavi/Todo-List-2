@@ -1,0 +1,48 @@
+// Developed and Designed by Mohammad Alavi - https://github.com/mohammad00alavi 
+
+.Todo {
+  display: grid;
+  grid-template-columns: 2fr 50px 50px;
+  grid-template-rows: 50px;
+  gap: 5px;
+  li {
+    font-weight: 500;
+    position: relative;
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: $transition-1;
+    border-radius: 30px;
+    &:hover {
+      background-color: $primary-color;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -35px;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      border: 1.5px solid $btn-color;
+      transition: $transition-1;
+    }
+  }
+  &Edit {
+    form {
+      display: grid;
+      grid-template-columns: 2fr 50px;
+      grid-template-rows: 50px;
+      gap: 5px;
+      input {
+        padding-left: 30px;
+        border-radius: 30px;
+        transition: $transition-1;
+        border: 2px solid $btn-color;
+      }
+    }
+  }
+}
+

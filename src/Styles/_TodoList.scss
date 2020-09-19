@@ -1,0 +1,20 @@
+// Developed and Designed by Mohammad Alavi - https://github.com/mohammad00alavi 
+
+.TodoList {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 800px;
+  min-height: 200px;
+  padding: 40px 70px 25px 70px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.733);
+  ul {
+    margin-top: 25px;
+    display: grid;
+    gap: 10px 0;
+  }
+  input,button,li {
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+}

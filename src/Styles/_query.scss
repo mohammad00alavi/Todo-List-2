@@ -1,0 +1,37 @@
+// Developed and Designed by Mohammad Alavi - https://github.com/mohammad00alavi 
+
+@media (max-width: 850px){
+  .TodoList {
+    width: 95vw;
+    padding: 45px;
+  }
+}
+
+@media (max-width: 580px){
+  body,html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .TodoList {
+    width: 95vw;
+    padding: 45px;
+  }
+  .TodoForm {
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns:1fr;
+    gap: 2px;
+    input {
+      padding: 15px 30px;
+      border-radius: 30px;
+      transition: $transition-1;
+      border: 2px solid $btn-color;
+    }
+    button {
+      border-radius: 30px;
+      transition: $transition-1;
+      border: 2px solid $btn-color;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import 'variables';
+@import 'Todo';
+@import 'TodoForm';
+@import 'TodoList';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Developed and Designed by Mohammad Alavi - https://github.com/mohammad00alavi 
+
+// Root elements styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &:active,&:focus {
+    outline: none;
+  }
+}
+
+body,html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: rgb(29, 29, 29);
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  background: rgb(255,255,255);
+  background: linear-gradient(155deg, rgba(255,255,255,1) 0%, rgba(150,237,255,1) 100%);
+}
+
+.App {
+  justify-self: center;
+}
+
+// Headings
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+// Buttons
+
+.btn {
+  cursor: pointer;
+  border: 0.5px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  color: $btn-color;
+  transition: $transition-1;
+  &:hover {
+    background-color: $btn-color;
+    color: $secondary-color;
+  }
+  
+}
+
+.addTaskBtn {
+  cursor: pointer;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $btn-color;
+    color: #fff;
+  }
+}
+
+// Classes
+
+.completed {
+  color: rgb(175, 175, 175);
+  text-decoration: line-through;
+  background-color: rgba(0, 0, 0, 0.07);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+  }
+}
+
+li.completed {
+  &::before {
+    background-color: $btn-color;
+    border-color: $primary-color;
+  }
+  &::after {
+      transition: $transition-1;
+      content: '';
+      top:13px;
+      left: -25px;
+      position: absolute;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7.5px;
+      border-bottom: 5px solid $secondary-color;
+      border-right: 5px solid $secondary-color;
+  }
+}
+
+// Apply Media queries here
+
+@import 'query';
